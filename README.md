@@ -1,27 +1,48 @@
-# Welcome to Mojo 🔥
+# Mojo code examples
 
-Mojo is a new programming language that bridges the gap between research 
-and production by combining Python syntax and ecosystem with systems 
-programming and metaprogramming features. Mojo is still young, but it is designed
-to become a superset of Python over time.  
+A collection of sample programs and Mojo notebooks written in the  
+[Mojo](https://docs.modular.com/mojo/programming-manual.html) programming language.
 
-We plan to open-source Mojo progressively over time, but it's changing very quickly now. 
-We believe that a small, tight-knit group of engineers with a shared vision can move 
-faster than a community effort, so we will continue to incubate it within Modular until 
-it's more complete.  Please see the [Mojo FAQ](https://docs.modular.com/mojo/faq.html)
-for more information about this and other common questions. 
+## Getting Started
 
-We've opened this repo now because we want to gather issues and engage in feedback 
-from users who have access to the Mojo Playground (our hosted JupyterHub
-where you can try coding with an early version of Mojo). 
-To get access to the Mojo Playground, [see here to sign up](https://docs.modular.com/mojo/get-started.html).
-Then, when you want to report issues or request features,
-[please create a GitHub issue here](https://github.com/modularml/mojo/issues).
+Access a Mojo programming environment available from the  
+Mojo product [page](https://www.modular.com/mojo).
 
-For more general questions or to chat with other Mojo developers,
-check out our [Discord](https://discord.gg/modular). 
+Git clone the repository of Mojo samples using the command below:
 
-Otherwise, you can:
-- Read the [inspiration behind Mojo](https://docs.modular.com/mojo/why-mojo.html).
-- Check out the [Mojo programming manual](https://docs.modular.com/mojo/programming-manual.html).
-- Read our other docs on [docs.modular.com/mojo](https://docs.modular.com/mojo).
+```bash
+git clone https://github.com/modularml/mojo.git
+```
+
+## Running
+
+Use the following sample command-line to run the programs:
+
+```bash
+mojo matmul.mojo
+```
+
+You can run the Mojo notebooks using [JupyterLab or Visual Studio  
+Code](notebooks/README.md) with the Mojo extension available on the Marketplace.
+
+### Mojo SDK Container
+
+The repo also contains a Dockerfile that can be used to create a  
+Mojo SDK container for developing and running Mojo programs. Use the  
+container in conjunction with the Visual Studio Code devcontainers  
+extension to develop directly inside the container.
+
+The Dockerfile also sets up a `conda` environment and by default,  
+starts a `jupyter` server (which you can access via the browser).
+
+## License
+
+The Mojo examples and notebooks in this repository are licensed  
+under the Apache License v2.0 with LLVM Exceptions  
+(see the LLVM [License](https://llvm.org/LICENSE.txt)).
+
+## Contributing
+
+Thanks for your interest in contributing to this repository!  
+We are not accepting pull requests at this time, but are actively  
+working on a process to accept contributions. Please stay tuned.
